@@ -55057,6 +55057,38 @@ var map = {
 		"./resources/js/Pages/Contact.js",
 		"resources_js_Pages_Contact_js"
 	],
+	"./Users/Create": [
+		"./resources/js/Pages/Users/Create.js",
+		"resources_js_Pages_Users_Create_js"
+	],
+	"./Users/Create.js": [
+		"./resources/js/Pages/Users/Create.js",
+		"resources_js_Pages_Users_Create_js"
+	],
+	"./Users/Edit": [
+		"./resources/js/Pages/Users/Edit.js",
+		"resources_js_Pages_Users_Edit_js"
+	],
+	"./Users/Edit.js": [
+		"./resources/js/Pages/Users/Edit.js",
+		"resources_js_Pages_Users_Edit_js"
+	],
+	"./Users/Index": [
+		"./resources/js/Pages/Users/Index.js",
+		"resources_js_Pages_Users_Index_js"
+	],
+	"./Users/Index.js": [
+		"./resources/js/Pages/Users/Index.js",
+		"resources_js_Pages_Users_Index_js"
+	],
+	"./Users/Show": [
+		"./resources/js/Pages/Users/Show.js",
+		"resources_js_Pages_Users_Show_js"
+	],
+	"./Users/Show.js": [
+		"./resources/js/Pages/Users/Show.js",
+		"resources_js_Pages_Users_Show_js"
+	],
 	"./Welcome": [
 		"./resources/js/Pages/Welcome.js",
 		"resources_js_Pages_Welcome_js"
@@ -55190,7 +55222,7 @@ module.exports = webpackAsyncContext;
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_Pages_About_js":1,"resources_js_Pages_Contact_js":1,"resources_js_Pages_Welcome_js":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_Pages_About_js":1,"resources_js_Pages_Contact_js":1,"resources_js_Pages_Users_Create_js":1,"resources_js_Pages_Users_Edit_js":1,"resources_js_Pages_Users_Index_js":1,"resources_js_Pages_Users_Show_js":1,"resources_js_Pages_Welcome_js":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

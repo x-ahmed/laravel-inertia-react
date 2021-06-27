@@ -53,7 +53,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Layout(_ref) {
-  var children = _ref.children;
+  var children = _ref.children,
+      flash = _ref.flash;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("main", {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("nav", {
       className: "navbar navbar-expand-lg navbar-dark bg-dark",
@@ -92,8 +93,26 @@ function Layout(_ref) {
           })]
         })
       })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("header", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("article", {
-      children: children
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "container my-3",
+      children: [flash.message && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        className: "alert alert-".concat(flash.type, " alert-dismissible fade show"),
+        id: "session-alerts",
+        role: "alert",
+        children: [flash.message, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+          type: "button",
+          onClick: function onClick(e) {
+            return e.target.parentNode.parentNode.parentNode.removeChild(e.target.parentNode.parentNode);
+          },
+          className: "close",
+          "data-dismiss": "alert",
+          "aria-label": "Close",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+            "aria-hidden": "true",
+            children: "\xD7"
+          })
+        })]
+      }), children]
     })]
   });
 }

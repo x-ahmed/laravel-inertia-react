@@ -1,18 +1,18 @@
-(self["webpackChunk"] = self["webpackChunk"] || []).push([["resources_js_Pages_Contact_js"],{
+(self["webpackChunk"] = self["webpackChunk"] || []).push([["resources_js_Pages_Users_Show_js"],{
 
-/***/ "./resources/js/Pages/Contact.js":
-/*!***************************************!*\
-  !*** ./resources/js/Pages/Contact.js ***!
-  \***************************************/
+/***/ "./resources/js/Pages/Users/Show.js":
+/*!******************************************!*\
+  !*** ./resources/js/Pages/Users/Show.js ***!
+  \******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ Contact)
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _Shared_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Shared/Layout */ "./resources/js/Shared/Layout.js");
+/* harmony import */ var _Shared_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../Shared/Layout */ "./resources/js/Shared/Layout.js");
 /* harmony import */ var _inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/inertia-react */ "./node_modules/@inertiajs/inertia-react/dist/index.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
@@ -20,17 +20,40 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function Contact(props) {
+
+
+var Show = function Show(_ref) {
+  var errors = _ref.errors,
+      flash = _ref.flash,
+      user = _ref.user;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(_Shared_Layout__WEBPACK_IMPORTED_MODULE_1__.default, {
+    flash: flash,
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_2__.InertiaHead, {
-      title: "Contact"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h1", {
-      children: "Contact"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
-      children: "welcome to your Contact Inertia app!"
+      title: user.name
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+      className: "card",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+        className: "card-header",
+        children: "Show User"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+        className: "card-body",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h5", {
+          className: "card-title",
+          children: user.name
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
+          className: "card-text",
+          children: user.email
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
+          href: "/users",
+          className: "btn btn-primary",
+          children: "Users table"
+        })]
+      })]
     })]
   });
-}
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Show);
 
 /***/ }),
 
